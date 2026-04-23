@@ -268,7 +268,8 @@ def run_analysis(receipt_ids: list = None) -> str:
 
 def run_analysis_stream(receipt_ids=None, date_from=None, date_to=None, sources=None):
     """Streaming generator: yields SSE events as agent produces output."""
-    import queue, threading
+    import queue
+    import threading
 
     global _target_receipt_ids, _date_from, _date_to, _sources
     _target_receipt_ids = receipt_ids

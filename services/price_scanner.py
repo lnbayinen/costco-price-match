@@ -96,7 +96,7 @@ def _scrape_rfd_clearance() -> list:
 
         for post in soup.select(".post_content"):
             text = post.get_text()
-            lines = [l.strip() for l in text.split("\n") if l.strip()]
+            lines = [ln.strip() for ln in text.split("\n") if ln.strip()]
             for line in lines:
                 if ".97" in line and "$" in line and len(line) < 200:
                     # Match "product name was $X.97" or "product name $X.97"
