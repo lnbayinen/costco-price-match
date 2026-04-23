@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+python-multipart
+boto3
+strands-agents
+beautifulsoup4
+requests
+pillow
+PyMuPDF
+bedrock-agentcore
